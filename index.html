@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 
@@ -27,19 +28,19 @@
         <form action="" id="survey-form">
           <div class="form-group">
             <label for="name" id="name-label">Nombre:</label>
-            <input type="text" class="form-control" id="name" placeholder="Ingresar nombre">
+            <input type="text" class="form-control" id="name" placeholder="Ingresar nombre" required>
           </div>
           <div class="form-group">
             <label for="email" id="email-label">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
           </div>
           <div class="form-group">
             <label for="number" id="number-label">Edad:</label>
-            <input type="number" class="form-control" id="number" placeholder="Ingresar edad" min="1" max="2">
+            <input type="number" class="form-control" id="number" placeholder="Ingresar edad" min="15" max="99" required>
           </div>
           <div class="form-group">
             <label for="dropdown">Nivel académico:</label>
-            <select class="form-control" id="dropdown">
+            <select class="form-control" id="dropdown" required>
               <option selected>Selecciona uno...</option>
               <option value="ninguno">Ninguno</option>
               <option value="primaria">Primaria</option>
@@ -58,21 +59,15 @@
               <div class="col-sm-10">
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="estudio" checked>
-                  <label class="form-check-label" for="gridRadios1">
-                    Estudio
-                  </label>
+                  <label class="form-check-label" for="gridRadios1">Estudio</label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="empleado">
-                  <label class="form-check-label" for="gridRadios2">
-                    Empleado
-                  </label>
+                  <label class="form-check-label" for="gridRadios2">Empleado</label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="ninguno">
-                  <label class="form-check-label" for="gridRadios2">
-                    Ninguna de las anteriores
-                  </label>
+                  <label class="form-check-label" for="gridRadios2">Ninguna de las anteriores</label>
                 </div>
               </div>
             </div>
@@ -92,8 +87,9 @@
           </div>
           <div class="form-group">
             <label for="comentario">Comentarios o sugerencias:</label>
-            <textarea class="form-control" id="comentario" rows="3"></textarea>
+            <textarea class="form-control" id="comentario" rows="3" placeholder="Ingresa tus comentarios o sugerencias" required></textarea>
           </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
       </div>
     </main>
@@ -102,9 +98,9 @@
       <h6>Reto 2 FCC: Responsive Web Design Projects - Build a Survey Form</h6>
       <p>Maria Helena Santos Pineda</p>
     </footer>
-
+    
+    <!-- jQuery and JS bundle w/ Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
 </html>
